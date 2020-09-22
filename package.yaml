@@ -5,6 +5,13 @@ maintainer: HaskellNixCabalStarter
 license: MIT
 dependencies:
 - base >=4.12 && <4.13
+- servant
+- servant-client
+- servant-client-core
+- free
+- aeson
+- http-client
+- pretty-simple
 executables:
   app:
     source-dirs: src

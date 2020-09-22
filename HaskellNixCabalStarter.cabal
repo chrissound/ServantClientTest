@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 5ef7b5f228b628ee25ac395fd98e4d1ae00a5c5d37c91e8b8312e3e3897fe8da
+-- hash: 7aa992e786acd2db8100891c666ba4526a2f50d0ff69bab0419dbbe39ea86cb8
 
 name:                HaskellNixCabalStarter
 version:             0.1.0.0
@@ -16,9 +16,17 @@ build-type:          Simple
 executable app
   main-is: Main.hs
   other-modules:
+      Client
       Paths_HaskellNixCabalStarter
   hs-source-dirs:
       src
   build-depends:
-      base >=4.12 && <4.13
+      aeson
+    , base >=4.12 && <4.13
+    , free
+    , http-client
+    , pretty-simple
+    , servant
+    , servant-client
+    , servant-client-core
   default-language: Haskell2010
